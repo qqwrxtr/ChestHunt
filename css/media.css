@@ -1,0 +1,146 @@
+@media (width:1366px) and (height:1024px) {
+	/*ipad-pro*/
+}
+
+@media (width:1024px) and (height:1366px) {
+	/*ipad-pro*/
+}
+
+@media (width:768px) and (height:1024px) {
+	/*ipad*/
+}
+
+@media screen and (min-width:2500px) {
+	.logo__img {
+		max-height: 45px;
+	}
+
+	.chests-grid__item {
+		max-width: 300px;
+	}
+}
+
+@media screen and (max-width:1300px) {
+	body {}
+
+	.background__item--one {
+		top: 10vmin;
+		left: -2vmin;
+	}
+
+	.background__item--two {
+		top: 50%;
+		left: 1vmin;
+	}
+
+	.background__item--three {
+		bottom: 10vmin;
+		left: 5vmin;
+	}
+
+	.background__item--four {
+		bottom: 10vmin;
+		right: 5vmin;
+	}
+
+	.background__item--five {
+		top: 50%;
+		right: -2vmin;
+	}
+
+	.background__item--six {
+		top: 15vmin;
+		right: 0vmin;
+	}
+
+}
+
+@media screen and (max-width: 876px) {
+	.chests-grid:hover, .chests-grid__img:hover {
+		cursor: pointer;
+	}
+
+	.background__item {
+		display: none;
+	}
+
+	.attempts {
+		font-size: 20px;
+	}
+
+	.popup__title {
+		font-size: 23px;
+	}
+
+	.popup__desc {}
+
+	.popup__button {
+		font-size: 21px;
+	}
+
+
+
+}
+
+@media screen and (max-height: 660px) {
+	.form-modal.form-modal--active {
+		padding: 20px 0;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.header__logo {
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+
+	.logo__img {
+		max-height: 30px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.header__logo {
+		margin: 20px 0 10px 0;
+	}
+
+	.attempts {
+		font-size: 16px;
+	}
+
+	.popup__title {
+		font-size: 20px;
+	}
+
+	.popup__desc {}
+
+	.popup__button {
+		font-size: 17px;
+	}
+
+}
+
+@media screen and (max-width:927px) and (min-width:768px) and (max-height:430px) {
+	.register__bonus-text {
+		font-size: 11px;
+	}
+
+	.register__bonus-img {
+		max-width: 35px;
+	}
+
+	.header__logo {
+		margin: 20px 10px;
+	}
+
+	.main {
+		padding: 5px 0;
+	}
+}
+
+@media screen and (min-width: 876px) and (min-height: 500px) and (max-height: 950px) {
+	body {
+		overflow: hidden;
+	}
+
+}

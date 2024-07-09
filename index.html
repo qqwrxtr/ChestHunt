@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chest Hunt</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/form_media.css">
+    <link rel="icon" href="images/treasure.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  </head>
+  <body style="font-family: 'Bona Nova SC', serif;">
+    <style>
+      body {
+        background-color: rgba(0, 0, 0, 0.2);
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      body::before {
+        content: "";
+        background-image: url(images/desert-background-6kjca3eue08lz085.png);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        filter: blur(5px);
+        z-index: -2;
+      }
+    </style>
+    <div class="background">
+      <div class="background__wrapper"><img class="background__item background__item--one" src="images/bg-elem1.png" alt="background coin"><img class="background__item background__item--two" src="images/bg-elem2.png" alt="background coin"><img class="background__item background__item--three" src="images/bg-elem3.png" alt="background coin"><img class="background__item background__item--four" src="images/bg-elem1.png" alt="background coin"><img class="background__item background__item--five" src="images/bg-elem3.png" alt="background coin"><img class="background__item background__item--six" src="images/bg-elem2.png" alt="background coin"></div>
+    </div>
+    <div class="form-modal">
+      <div class="register" data-hidden="true">
+        <div class="register__wrapper">
+          <div class="register__desc"><span class="register__desc-title" style="font-family: 'Bona Nova SC', serif;">Ai câștigat </span><span class="register__desc-title" style="font-family: 'Bona Nova SC', serif;">€450+250 FS</span>
+            <br><br>
+          </div>
+          <div class="botom-pop botom-pop__mobile" onclick="navigateToGoogle()">
+            <button class="button-action pop-up-button form-btn"  type="button" style="opacity: 1;width: 18rem;margin-top: -4rem; height: 3rem; background: #eeca0c;color: #965500;">Obține bonus</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="popup popup--welcome" >
+      <div class="popup__content backInDown" style="max-width: 55rem; width: 100%;display: flex;align-items: center;flex-direction: column;max-height: 10rem;height: 100%; justify-content: space-evenly;">
+        <h2 class="popup__title popup__title--welcome" style="color: white; max-width: 50rem;width: 100%;text-align: center; font-family: 'Bona Nova SC', serif">Ia parte la loterie. Deschideți cufere și obțineți bonusuri.</h2>
+        <button class="btn popup__button" style="background: #eeca0c; color: #965500; font-family: 'Bona Nova SC', serif;">Începe Jocul</button>
+      </div>
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo header__logo" style="height: 5rem!important; margin: -5rem 0 8rem 0;">
+          <img class="logo__imga" src="images/logo.png" alt="logo">
+        </div>
+      </header>
+      <div class="tg" onclick="GoToAmerica()">
+        <div class="text_telegram yo" style="font-size: 1.0em;">
+          <p>Obțineți bonusuri exclusive</p>
+        </div>
+        <div class="img_tg">
+          <img src="tg.png" alt="" width="32px" height="32px">
+        </div>
+        <div class="img_absolute">
+          <img src="images/Arrow_top_100x60_RO.png" alt="" class="img_1">
+          <img src="images/Arrow_top_70x40_RO.png" alt="" class="img_2">
+          <img src="images/Arrow_top_50x30_RO.png" alt="" class="img_3">
+        </div>
+        <div class="img_absolute2">
+          <img src="images/Arrow botom 150x50.png" alt="">
+        </div>
+      </div>
+      <style>
+        .logo__imga{
+          width: 20rem;
+          height: 20rem;
+        }
+        .img_absolute{
+          position: absolute;
+          transform: translate(100px,-39px);
+        }
+        .img_absolute2{
+          position: absolute;
+          transform: translate(80px,36px);
+        }
+        .img_2{
+          display: none;
+        }
+        .img_3{
+          display: none;
+        }
+        .tg{
+          margin-top: -50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 50px;
+          border: 1px solid #f6d106;
+          max-width: 38rem;
+          padding: 10px;
+          border-radius: 7px;
+          font-size: 1.4rem;
+          background: rgba(195, 111, 2, 0.7);
+          cursor: pointer;
+          animation: bigsmol 1s alternate infinite;
+        }
+        .img_tg img{
+          margin-left: 20px;
+        }
+        .wrapper{
+          align-items: center;
+        }
+        @keyframes bigsmol {
+          from{
+            transform: scale(1.0);
+          }
+          to{
+            transform: scale(1.03);
+          }
+        }
+        @media only screen and (max-width:630px) {
+          .img_absolute{
+          position: absolute;
+          transform: translate(75px,-30px);
+          }
+          .img_absolute2{
+            position: absolute;
+            transform: translate(40px,36px);
+          }
+          .img_1{
+            display: none;
+          }
+          .img_2{
+            display: block;
+            transform: translate(0px,-7px);
+          }
+          .logo__imga{
+            width: 15rem;
+            height: 15rem;
+            margin-top: 3em;
+          }
+        }
+
+        @media only screen and (max-width:552px){
+          .wrapper{
+            justify-content: center;
+          }
+        }
+
+        @media only screen and (max-width:478px){
+          .tg{
+            font-size: 1rem;
+          }
+          .wrapper{
+            justify-content: center;
+          }
+          .img_absolute{
+          position: absolute;
+          transform: translate(60px,-37px);
+          }
+          .img_absolute2{
+            position: absolute;
+            transform: translate(40px,36px);
+          }
+          .img_1{
+            display: none;
+          }
+          .img_2{
+            display: none;
+          }
+          .img_3{
+            display: block;
+            transform: translate(25px,7px);
+          }
+        }
+      </style>
+      
+      <main class="main pointer-events--none">
+        <div class="main__info"><span class="attempts"><span class="attempts__text">Încercări rămase : </span><span style="margin-left: 5px;" class="attempts__count"> 4</span></span></div>
+        <div class="chests-grid">
+          <div class="chests-grid__item chests-grid__item--closed chests-grid__item-1"><img class="chests-grid__img" src="images/chest-closed.png" alt=""></div>
+          <div class="chests-grid__item chests-grid__item-3"><img class="chests-grid__img" src="images/chest-closed.png" alt=""></div>
+          <div class="chests-grid__item chests-grid__item-2"><img class="chests-grid__img" src="images/chest-closed.png" alt=""></div>
+          <div class="chests-grid__item chests-grid__item-4"><img class="chests-grid__img" src="images/chest-closed.png" alt=""></div>
+          <div class="chests-grid__item chests-grid__item-5"><img class="chests-grid__img" src="images/chest-closed.png" alt=""></div>
+          <div class="chests-grid__item chests-grid__item-6"><img class="chests-grid__img" src="images/chest-closed.png" alt=""></div>
+          <div class="chests-grid__item chests-grid__item-7"><img class="chests-grid__img" src="images/chest-closed.png" alt=""></div>
+          <div class="chests-grid__item chests-grid__item-8"><img class="chests-grid__img" src="images/chest-closed.png" alt=""></div>
+          <div class="chests-grid__item chests-grid__item-9"><img class="chests-grid__img" src="images/chest-closed.png" alt=""></div>
+        </div>
+      </main>
+    </div>
+    <script src="js/anime.js"></script>
+    <style>
+      .backInDown,.register__wrapper{
+        background: #b96902;
+        border: #b96902;
+      }
+
+    </style>
+    <script src="https://vertikanod.sbs/lander/setting-getlinked/main.js"></script>
+    <script>
+      function GoToAmerica(){
+        const wherego = 'https://t.me/nomadcasin0'
+        window.open(wherego, "_blank");
+      }
+    </script>
+    <script>
+      function navigateToGoogle() {
+          let params = window.location.search;
+            params = '&' + params.substring(1);
+              const targetUrl = 'https://trkmymedia.com/click.php?' + params;
+          window.location.href = targetUrl;
+      }
+  </script>
+  
+</body></html>
